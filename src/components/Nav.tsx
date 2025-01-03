@@ -8,7 +8,7 @@ function Nav() {
   const [position, setPosition] = useState<boolean>(false);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   const [activeMenu, setActiveMenu] = useState<string>("Home");
-  const [showing, setShowing] = useState<boolean>(false)
+  const [showing, setShowing] = useState<boolean>(false);
   const navRef = useRef<HTMLElement | null>(null);
 
   useGSAP(() => {
@@ -16,28 +16,28 @@ function Nav() {
       gsap.fromTo(
         "#nav",
         {
-          y: -400, 
-          opacity: 0, 
+          y: -400,
+          opacity: 0,
         },
         {
-          y: 0, 
+          y: 0,
           opacity: 1,
-          duration: 1, 
-          ease: "power3.out", 
+          duration: 1,
+          ease: "power3.out",
         }
       );
     }
   }, [showing]);
 
   useEffect(() => {
-    setShowing(true); 
+    setShowing(true);
 
     const handleScroll = () => {
       setPosition(window.scrollY > 0);
       if (window.scrollY === 0) {
-        setShowing(true); 
-      }else{
-setShowing(false)
+        setShowing(true);
+      } else {
+        setShowing(false);
       }
     };
     window.addEventListener("scroll", handleScroll);

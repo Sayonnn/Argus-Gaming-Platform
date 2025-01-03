@@ -20,7 +20,7 @@ import { FaFacebook } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { SiHostinger } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
-
+import { GiCrestedHelmet } from "react-icons/gi";
 const smIcon:number = 20;
 const mdIcon:number = 30;
 
@@ -52,6 +52,7 @@ export const icons = {
     iGmail:<SiGmail size={smIcon}/>,
     iHostinger:<SiHostinger size={smIcon}/>,
     iGithub:<FaGithub size={smIcon}/>,
+    iHelmet:<GiCrestedHelmet size={mdIcon}/>,
 
 
 }

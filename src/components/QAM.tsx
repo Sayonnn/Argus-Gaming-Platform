@@ -1,4 +1,3 @@
-import React from "react";
 import { icons } from "../utilities/icons";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -56,7 +55,7 @@ function QAM() {
 
   return (
     <div
-      className="flex flex-col gap-4 fixed bottom-4 left-4 p-4 z-[100000]"
+      className="flex md:flex-col flex-row gap-4 md:fixed  md:bottom-4 md:left-4 md:p-4 bottom-2 left-4 p-4  z-[100000]"
       id="QAMLinks"
     >
       {loadLinks()}

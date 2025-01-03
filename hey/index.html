@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castle City Map</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .map-container {
+      position: relative;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .tooltip {
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      pointer-events: none;
+      display: none;
+      white-space: nowrap;
+    }
+
+    .marker {
+      position: absolute;
+      background-color: rgba(255, 0, 0, 0.5);
+      border: 2px solid red;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .marker.rect {
+      border-radius: 0;
+      background-color: rgba(0, 0, 255, 0.3);
+    }
+
+    .marker.poly {
+      border: none;
+      background-color: rgba(0, 255, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="map-container">
+    <img
+      src="../src/assets/images/maps/map_4.jpg"
+      alt="Castle City Map"
+      usemap="#castleMap"
+      id="mapImage"
+    />
+    <div id="tooltip" class="tooltip"></div>
+  </div>
+
+  <map name="castleMap">
+    <!-- Define clickable areas -->
+    <area
+      shape="circle"
+      coords="300,200,50"
+      href="#"
+      alt="Castle"
+      onmouseover="showTooltip(event, 'Castle')"
+      onmouseout="hideTooltip()"
+    />
+    <area
+      shape="rect"
+      coords="400,300,500,400"
+      href="#"
+      alt="Market"
+      onmouseover="showTooltip(event, 'Market')"
+      onmouseout="hideTooltip()"
+    />
+    <area
+      shape="poly"
+      coords="600,200,650,250,550,250"
+      href="#"
+      alt="Park"
+      onmouseover="showTooltip(event, 'Park')"
+      onmouseout="hideTooltip()"
+    />
+  </map>
+
+  <script>
+    const tooltip = document.getElementById('tooltip');
+    const mapImage = document.getElementById('mapImage');
+    const container = document.querySelector('.map-container');
+
+    function showTooltip(event, text) {
+      tooltip.textContent = text;
+      tooltip.style.left = `${event.pageX + 10}px`;
+      tooltip.style.top = `${event.pageY + 10}px`;
+      tooltip.style.display = 'block';
+    }
+
+    function hideTooltip() {
+      tooltip.style.display = 'none';
+    }
+
+    // Create markers based on coords
+    function createMarkers() {
+      const areas = document.querySelectorAll('area');
+      areas.forEach((area) => {
+        const coords = area.coords.split(',').map(Number);
+        const shape = area.shape;
+
+        const marker = document.createElement('div');
+        marker.className = 'marker';
+
+        if (shape === 'circle') {
+          const [x, y, r] = coords;
+          marker.style.width = `${r * 2}px`;
+          marker.style.height = `${r * 2}px`;
+          marker.style.left = `${x - r}px`;
+          marker.style.top = `${y - r}px`;
+        } else if (shape === 'rect') {
+          const [x1, y1, x2, y2] = coords;
+          marker.classList.add('rect');
+          marker.style.width = `${x2 - x1}px`;
+          marker.style.height = `${y2 - y1}px`;
+          marker.style.left = `${x1}px`;
+          marker.style.top = `${y1}px`;
+        } else if (shape === 'poly') {
+          const [x1, y1, x2, y2, x3, y3] = coords;
+          marker.classList.add('poly');
+          const points = `${x1}px ${y1}px, ${x2}px ${y2}px, ${x3}px ${y3}px`;
+          marker.style.clipPath = `polygon(${points})`;
+          marker.style.position = 'absolute';
+          marker.style.width = `${mapImage.clientWidth}px`; // Match image width
+          marker.style.height = `${mapImage.clientHeight}px`; // Match image height
+        }
+
+        container.appendChild(marker);
+      });
+    }
+
+    mapImage.addEventListener('load', createMarkers);
+  </script>
+</body>
+</html>

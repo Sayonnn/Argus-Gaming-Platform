@@ -8,7 +8,7 @@
 }
 
 *::-webkit-scrollbar {
-    width: 8px; /* Adjust scrollbar width */
+    width: 0px; /* Adjust scrollbar width */
     height: 12px; /* For horizontal scrollbars, if applicable */
 }
 
@@ -17,8 +17,7 @@
 }
 
 *::-webkit-scrollbar-thumb{
-    background:rgb(27, 225, 116);
-    border-radius: 5px;
+    background:rgb(12, 28, 19);
 }
 
 *::-webkit-scrollbar-track{

@@ -31,15 +31,15 @@ type Image = {
 
 function Gallery() {
   const images: Image[] = [
-    { id: 1, image: img1, title: "1",overlay:overlay1 },
-    { id: 2, image: img2, title: "2",overlay:overlay2 },
-    { id: 3, image: img3, title: "3",overlay:overlay3 },
-    { id: 4, image: img4, title: "4",overlay:overlay4 },
-    { id: 5, image: img5, title: "5",overlay:overlay5 },
-    { id: 6, image: img6, title: "6",overlay:overlay6 },
-    { id: 7, image: img7, title: "7",overlay:overlay7 },
-    { id: 8, image: img8, title: "8",overlay:overlay8 },
-    { id: 9, image: img9, title: "9",overlay:overlay9 },
+    { id: 1, image: img1, title: "Sir Azkael Luminaire",overlay:overlay1 },
+    { id: 2, image: img2, title: "Sir Garrick Stormborn",overlay:overlay2 },
+    { id: 3, image: img3, title: "Sir Caelan Ironheart",overlay:overlay3 },
+    { id: 4, image: img4, title: "Isolde Starcrest",overlay:overlay4 },
+    { id: 5, image: img5, title: "Sir Aldric the Valiant",overlay:overlay5 },
+    { id: 6, image: img6, title: "Seraphina of the Silver Blade",overlay:overlay6 },
+    { id: 7, image: img7, title: "Ronan Dragonslayer",overlay:overlay7 },
+    { id: 8, image: img8, title: "Elenora Brightshield",overlay:overlay8 },
+    { id: 9, image: img9, title: "Liora Shadowbane",overlay:overlay9 },
   ];
 
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -186,7 +186,7 @@ function Gallery() {
                   className={`w-full h-full ${s.templateImg} `}
                   alt={img.title}
                 />
-                <div className={`${s.templateDescription}`}>Description</div>
+                <div className={`${s.templateDescription}`}>{img.title}</div>
               </div>
               {/* template overlay */}
                 <div

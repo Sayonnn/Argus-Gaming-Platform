@@ -9,14 +9,14 @@ import overlay8 from "../assets/images/gallery/overlay_8.png";
 import overlay9 from "../assets/images/gallery/overlay_9.png";
 import { Knight } from "./typeProvider";
 
-export const knights: Knight[] = [
+export const knights: Knight[] =[
   {
     id: 1,
     image: overlay1,
     legacy:
       "A knight renowned for their radiant presence and unwavering valor.",
     journey:
-      "Sir Azkael Luminaire began his journey in the radiant halls of the Kingdom of Luminara, where he was chosen as the bearer of the Sacred Blade of Light. From the moment he took up arms, his destiny was to confront the forces of darkness that threatened the realm. Azkael ventured through haunted forests, desolate plains, and cursed battlegrounds, each more perilous than the last. His swordsmanship and courage became the stuff of legend, inspiring bards and poets to immortalize his deeds. In the village of Vethralis, he single-handedly repelled a horde of shadowspawn, earning the undying gratitude of its people.\n\nBeyond the battlefield, Sir Azkael’s journey was one of personal growth and enlightenment. He sought not only to vanquish darkness but to understand its origin, striving to bring balance to the realm. His greatest victory came during the Siege of Luminara, where he led an army of knights, peasants, and mages in a desperate stand against the Abyssal Legion. With his radiant presence, he united a fractured kingdom, proving that true strength lies in unity and hope.",
+      "Like Sir Azkael, modern-day software knights carry the light of innovation in the battle against darkness, be it in the form of cyber threats, malware, or challenges in the tech world. Just as Azkael united a fractured kingdom with hope, software developers unite teams, inspire progress, and create solutions that illuminate the future. These modern knights combat the unseen dangers lurking in the digital realm, whether it's through building secure systems, creating innovative apps, or tackling complex infrastructure problems. Their journey is one of constant learning, adaptability, and resilience as they forge ahead to shape the technological landscape.",
     origin: "The Kingdom of Luminara",
     age: "32",
     gender: "Male",
@@ -31,7 +31,7 @@ export const knights: Knight[] = [
     legacy:
       "A tempestuous warrior known for their fierce loyalty and unrelenting spirit.",
     journey:
-      "Sir Garrick Stormborn was raised amidst the tempestuous skies of the Stormlands, a region known for its violent weather and even fiercer inhabitants. As a young knight, Garrick faced betrayal when a rival clan usurped his family’s throne. With nothing but his blade and his indomitable will, he swore to reclaim what was lost. Garrick gathered an army of outcasts, forging alliances with those who had suffered under tyranny. Together, they braved lightning-laden plains and torrential downpours, enduring hardships that would break lesser men.\n\nThe culmination of his journey came during the Battle of Thunder’s Crown, where Garrick confronted the usurper king atop a storm-wracked mountain. The heavens seemed to answer his fury, as thunder roared and lightning illuminated his every strike. Victorious, Garrick restored peace to his homeland and became a symbol of unyielding loyalty and strength. Yet, even after reclaiming the throne, he continued to fight for justice, ensuring that the Stormlands would never again be ruled by oppression.",
+      "The storm that Sir Garrick thrived in mirrors the turbulent world of tech entrepreneurs and software engineers, who often face adversity and uncertainty in their quest to build something new. Like Garrick, many rise from the ashes of failure, gather like-minded allies (teams), and push through the chaos to reclaim control. In the world of software development, this means navigating tight deadlines, managing technical debt, and adapting to shifting industry standards. Just as Garrick led his allies to victory, software knights work tirelessly to innovate, create, and deliver breakthrough technologies that endure. Their journey is filled with challenges, but their spirit never wavers as they continuously redefine what is possible in the tech world.",
     origin: "The Stormlands",
     age: "36",
     gender: "Male",
@@ -43,10 +43,9 @@ export const knights: Knight[] = [
   {
     id: 3,
     image: overlay3,
-    legacy:
-      "A stoic knight with an unbreakable will and unmatched resilience.",
+    legacy: "A stoic knight with an unbreakable will and unmatched resilience.",
     journey:
-      "Sir Caelan Ironheart was born in the shadow of the Iron Keep, a fortress famed for its unbreachable walls. From a young age, he trained to be its protector, taking an oath to defend the stronghold with his life. For decades, he stood vigil, weathering sieges and assaults that would have crushed ordinary knights. Caelan’s unyielding defense earned him the respect of allies and enemies alike, as he seemed as immovable as the fortress he guarded. During the infamous Siege of the Crimson Horde, he held the walls for over a month, buying time for reinforcements to arrive.\n\nBeyond his stoic demeanor lay a deep sense of duty and compassion. Caelan often risked his life to rescue villagers trapped outside the keep during attacks. His greatest test came when the Iron Keep was besieged by a coalition of warring clans. Leading a desperate counterattack, he not only broke the siege but brokered a fragile peace among the clans. Sir Caelan’s legacy endures as a testament to resilience and the power of steadfast commitment to one’s duty.",
+      "Sir Caelan’s steadfast resilience is akin to the determination of software engineers who continuously improve and protect the systems they build. Just as Caelan defended the Iron Keep, modern software knights face daily challenges like bugs, security vulnerabilities, and system crashes. They rise to the occasion, learning from each failure, and ensuring that their code and infrastructure stand firm under pressure. The journey of a software engineer is one of perpetual growth and learning, as they adapt to emerging technologies, implement innovative solutions, and defend the integrity of the systems they manage. Much like Caelan’s enduring commitment to his cause, they remain resolute, always ready to safeguard their digital domains.",
     origin: "The Iron Keep",
     age: "40",
     gender: "Male",
@@ -58,10 +57,9 @@ export const knights: Knight[] = [
   {
     id: 4,
     image: overlay4,
-    legacy:
-      "A celestial knight guided by the stars and committed to justice.",
+    legacy: "A celestial knight guided by the stars and committed to justice.",
     journey:
-      "Lady Isolde Starcrest’s journey began in the celestial halls of the Starforge Citadel, where she trained under the guidance of astrologer-knights who interpreted the will of the stars. Her destiny was written in the heavens, foretelling her role as a unifier in a time of chaos. With a celestial compass in hand, Isolde embarked on a quest across fractured kingdoms, mediating disputes and forging alliances. Her silver armor and star-emblazoned banner became a beacon of hope, as she spoke of a future where unity and peace reigned.\n\nHer most arduous trial came during the War of the Five Realms, where she walked unarmed into enemy camps to broker peace treaties. Though many doubted her vision, her unshakeable faith and eloquence won over even the most skeptical warlords. In the climactic Battle of Zenith Fields, she led a coalition army under a single banner, turning the tide against an invading force. Lady Isolde’s celestial journey is remembered as one of justice, hope, and the enduring power of the stars to guide those who seek harmony.",
+      "Like Lady Isolde, tech leaders are visionaries, often guided by a belief in the power of technology to unite and foster harmony. Lady Isolde mediated disputes and brokered peace, much like those in the tech world who bridge gaps between users, clients, and teams. They work tirelessly to ensure that technology brings people together for the greater good. The journey of a tech leader is not only about innovation but also about fostering collaboration and ensuring the ethical use of technology. Whether it's solving a conflict in a product roadmap or addressing security concerns, they are always seeking harmony in a world filled with complexity. Just as Isolde’s legacy continues to inspire, tech leaders of today continue to shape the future with a deep sense of justice and responsibility.",
     origin: "The Starforge Citadel",
     age: "28",
     gender: "Female",
@@ -75,7 +73,7 @@ export const knights: Knight[] = [
     image: overlay5,
     legacy: "A knight of noble heart and unmatched bravery in battle.",
     journey:
-      "Sir Aldric the Valiant earned his title defending the Emerald Plains from waves of invaders. As a young squire, he witnessed his homeland ravaged by war, vowing to become its shield. Upon receiving his knighthood, Aldric dedicated himself to fortifying the borders and training the local militia. His strategic brilliance and unmatched bravery turned the Emerald Plains into an impregnable bastion. In the Battle of Verdant Shadows, he led a daring charge against overwhelming odds, driving the invaders back and securing peace for a generation.\n\nHowever, Aldric’s journey was not solely defined by combat. He believed that a true knight’s duty extended beyond the battlefield. He organized reconstruction efforts, rebuilt villages, and ensured the prosperity of his people. Even in peacetime, Aldric continued to patrol the borders, ever vigilant. His legacy is one of courage and unwavering dedication to the land and people he loved.",
+      "Sir Aldric’s courage in the face of overwhelming odds mirrors the bravery of software developers who build in the face of uncertainty and constant change. Much like Aldric’s strategic brilliance in battle, software knights use their problem-solving skills to construct solutions that fortify systems, protect data, and ensure the prosperity of the digital landscape. The world of tech is fast-paced, and developers often face challenges such as tight deadlines, resource constraints, and unforeseen technical obstacles. However, just as Aldric’s courage inspired his comrades, developers rise above these challenges, crafting reliable solutions, and transforming uncertainty into opportunity. Their journey is one of bravery, perseverance, and unyielding commitment to their craft.",
     origin: "The Emerald Plains",
     age: "34",
     gender: "Male",
@@ -89,7 +87,7 @@ export const knights: Knight[] = [
     image: overlay6,
     legacy: "A graceful warrior with a blade as sharp as her wit.",
     journey:
-      "Seraphina of the Silver Blade embarked on a perilous quest to rid the Silver Mountains of the menacing Silver Wyrm. The beast, a symbol of terror for the mountain villages, had long tormented the locals, destroying their crops and homes. Seraphina's journey began with a treacherous ascent through icy peaks and snow-laden trails, where she faced relentless storms and ambushes by hostile creatures drawn to the wyrm's aura. Her resilience and unyielding spirit became the stuff of legends as she pressed onward.\n\nWhen she finally confronted the wyrm, a battle of epic proportions unfolded. Seraphina's grace and precision with her silver blade were unmatched as she outmaneuvered the beast's ferocious strikes and fiery breath. After a long and grueling duel, she struck the decisive blow, ending the wyrm's reign of terror. Her victory not only brought peace to the mountain villages but also cemented her place in the annals of the realm's greatest heroes.",
+      "Seraphina’s graceful precision and sharpness reflect the finesse and skill required in programming. Tech professionals, like Seraphina, face challenges with elegance, solving problems with precision and ensuring that their solutions are both efficient and beautiful. Just as Seraphina’s blade was both a tool and a symbol of victory, the tools that software professionals build must strike the right balance between performance and user experience. The journey of a software engineer or designer is one of continual refinement, where each line of code must be optimized for performance, every user interaction is considered, and every design decision is made with both elegance and functionality in mind. It’s a path filled with challenges, but also great rewards.",
     origin: "The Silver Mountains",
     age: "30",
     gender: "Female",
@@ -97,13 +95,13 @@ export const knights: Knight[] = [
     ranking: 6,
     x: 0,
     y: 0,
-},
-{
+  },
+  {
     id: 7,
     image: overlay7,
     legacy: "A fierce hunter of dragons and protector of the weak.",
     journey:
-      "Ronan Dragonslayer was no stranger to danger, but his greatest trial came when he answered the cries for help from the Northern Highlands. The Crimson Dragon, a fearsome creature of fire and fury, had reduced entire villages to ash. Determined to end its tyranny, Ronan prepared for a battle that would test his limits. With a hand-forged lance imbued with ancient enchantments, he ventured into the dragon's territory, braving scorching heat and desolate landscapes. Each step toward the dragon's lair was fraught with peril, as the ground itself seemed to conspire against him.\n\nUpon reaching the lair, Ronan faced the beast in a fiery showdown. His cunning and agility allowed him to dodge the dragon's searing flames and devastating claws. Using his surroundings to his advantage, he lured the dragon into a trap, striking a fatal blow to its vulnerable underbelly. The victory was hard-won but transformative, as Ronan's name became synonymous with courage and hope. The Northern Highlands, now free of the dragon's terror, hailed him as their savior and protector.",
+      "Ronan’s dragon-slaying is symbolic of those in tech who tackle monumental challenges, whether they’re facing large-scale system failures, implementing disruptive technologies, or battling cyber threats. Ronan’s bravery and ingenuity in battling the dragon mirrors how tech professionals use creativity and problem-solving skills to tackle the biggest challenges in the industry. Their journey is one of constant learning, where they are required to stay ahead of technological advancements, navigate emerging cybersecurity threats, and break down complex problems to create innovative solutions. Like Ronan, these modern-day knights face dangers head-on, battling dragons with a combination of skill, intelligence, and courage.",
     origin: "The Northern Highlands",
     age: "29",
     gender: "Male",
@@ -111,14 +109,14 @@ export const knights: Knight[] = [
     ranking: 7,
     x: 0,
     y: 0,
-},
-{
+  },
+  {
     id: 8,
     image: overlay8,
     legacy:
       "A beacon of hope, shielding the innocent with her indomitable courage.",
     journey:
-      "Elenora Brightshield's journey began as a humble protector of Brightvale, a tranquil town that found itself under siege by an army of shadowspawn. These malevolent creatures emerged from the depths of darkness, threatening to consume the land in chaos. Armed with her radiant shield and unbreakable determination, Elenora led the town's defenses, rallying the villagers to stand against the encroaching threat. Her inspiring presence turned the tide of despair into a surge of hope.\n\nAs the battle raged on, Elenora confronted the shadowspawn's dark leader in a fierce duel. Her shield, a symbol of light, clashed against the enemy's weapon of darkness. With strategic brilliance and sheer willpower, she overcame the leader, shattering the army's cohesion. Brightvale was saved, and Elenora's heroics became a beacon for all who faced adversity. Her name is spoken with reverence, a reminder that courage and unity can overcome even the most insurmountable odds.",
+      "Just as Elenora stood as a beacon of hope and protection for her people, software knights stand at the forefront of cybersecurity, providing shields against cyber attacks, fraud, and breaches. Like Elenora, who transformed the tide of despair into hope, those in tech work tirelessly to ensure that user data is safe, their apps are secure, and that technology enhances life in the most reliable ways. Their journey is one of vigilance, constant learning, and collaboration with other experts in the field. Every line of code, every security patch, and every system update is part of a broader mission to protect the digital realm from emerging threats.",
     origin: "Brightvale",
     age: "26",
     gender: "Female",
@@ -126,14 +124,13 @@ export const knights: Knight[] = [
     ranking: 8,
     x: 0,
     y: 0,
-},
-{
+  },
+  {
     id: 9,
     image: overlay9,
-    legacy:
-      "A mysterious knight who walks the line between light and shadow.",
+    legacy: "A mysterious knight who walks the line between light and shadow.",
     journey:
-      "Liora Shadowbane's enigmatic journey took her through the darkest corners of the Shadow Vale, a realm where light struggled to penetrate. As a master of shadow manipulation, Liora harnessed the power of the very darkness she sought to defeat. Her quest began when an ancient curse threatened to envelop the realm in eternal night. With a blend of cunning and magic, Liora infiltrated the heart of the curse's power, a fortress shrouded in impenetrable gloom.\n\nHer journey was not without sacrifice, as she faced relentless foes and overcame internal conflicts about the morality of wielding shadow magic. In the climactic confrontation with the curse's originator, Liora employed her mastery of shadows to outwit and overpower her adversary, sealing the curse away. Though victorious, she remained a figure of mystery, her deeds a testament to the delicate balance between light and shadow. Liora's story is one of redemption and the enduring struggle to protect her realm, no matter the cost.",
+      "Liora’s journey through the shadowy realms, wielding darkness for good, represents the modern-day tech professional who operates in areas like cybersecurity, data privacy, and ethical hacking. They navigate the complex and often dangerous world of dark web threats and use their skills to protect and secure information. Walking the line between light and shadow, they are the silent protectors of the digital age, ensuring that sensitive data remains secure while unearthing malicious actors. Like Liora, who harnesses both light and darkness for a noble cause, tech professionals today use their expertise to safeguard users and maintain integrity in the face of ever-evolving threats.",
     origin: "The Shadow Vale",
     age: "33",
     gender: "Female",
@@ -141,6 +138,6 @@ export const knights: Knight[] = [
     ranking: 9,
     x: 0,
     y: 0,
-},
+  }
+]
 
-];

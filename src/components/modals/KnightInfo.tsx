@@ -109,7 +109,7 @@ function KnightInfo({ info, closeModal }: KnightProps) {
                 {info?.ranking}
               </span>
               <span className=" text-xs ">
-                <b className="uppercase text-gray-300">Origin </b>
+                <b className="uppercase text-gray-300">Origin: </b>
                 {info?.origin}
               </span>
               <span className="uppercase text-xs ">

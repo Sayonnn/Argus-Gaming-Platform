@@ -54,7 +54,7 @@ function What() {
         </section>
         {/* Right Section with Radial Gradient */}
         <section className="flex-1 flex items-start flex-col justify-start gap-2 ">
-          <p className=" border-l-2 border-gray-400 px-2 text-gray-400" >Are you ready to become a knight?</p>
+          <p className=" border-l-2 border-gray-400 px-2 text-gray-400" >Are you ready to become a software knight?</p>
           <h1 className="font-bold md:text-6xl text-4xl flex gap-2"  id="subtitle">
             Become one with just a few tricks
           </h1>

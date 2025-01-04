@@ -13,11 +13,11 @@ function Info() {
         trigger: "#info",
         start: "top 60%",
         end: "bottom 100%",
-        scrub: 1, 
+        scrub: 1,
         toggleActions: "play none none reverse",
       },
     });
-  
+
     timeline
       .fromTo(
         "#description",
@@ -37,29 +37,37 @@ function Info() {
         "<0.3"
       );
   }, []);
-  
 
   return (
-    <section className="h-[auto] w-full relative overflow-hidden md:py-20" id = "info">
+    <section
+      className="h-[auto] w-full relative overflow-hidden md:py-20"
+      id="info"
+    >
       <div className="absolute top-0 left-0 w-full h-[100vh]"></div>
 
       <div className="relative bg-gray-900/90 md:px-40 w-full h-[100vh] p-4  flex md:flex-row gap-4 flex-col  ">
         <section className="flex-1 flex items-start flex-col justify-center">
-          <h1 className="font-bold md:text-5xl text-4xl flex gap-2" id="description">
-            KNIGHTS <p className="text-emerald-400"> DUTY</p>
+          <h1
+            className="font-bold md:text-5xl text-4xl flex gap-2"
+            id="description"
+          >
+            KNIGHTS <p className="text-emerald-400">OATH</p>
           </h1>
           <div className="w-[250px] h-[5px] bg-white mt-3"></div>
           <div className="w-[150px] h-[5px] bg-white mt-3"></div>
-          <p className="mt-4 md:text-lg" id="description">
-            Knight Duty is a role embodying leadership, responsibility, and
-            service. It requires individuals to uphold honor and integrity while
-            fulfilling tasks that ensure the safety, unity, and well-being of a
-            community or organization. Whether overseeing operations, guiding a
-            team, or providing support during critical moments, Knight Duty
-            emphasizes commitment, strategic thinking, and unwavering dedication
-            to the mission at hand. This role reflects the highest standards of
-            discipline and excellence, inspiring others through action and
-            resolve.
+          <p className="mt-4 md:text-md" id="description">
+            The Software Knight Oath is a pledge to uphold the highest
+            principles of code craftsmanship, innovation, and responsibility. As
+            a Software Knight, we dedicate ourselves to the pursuit of
+            excellence, ensuring our code is clean, efficient, and secure. We
+            protect the integrity of the systems we build and serve the needs of
+            the users with unwavering commitment. Through collaboration,
+            mentorship, and a dedication to continuous improvement, we lead by
+            example, fostering trust, creativity, and progress. In moments of
+            challenge, we rise with resolve, upholding the ideals of integrity,
+            accountability, and the collective good of the digital world. This
+            oath is a testament to our unyielding duty to not only meet but
+            exceed the expectations of those who rely on our work.
           </p>
         </section>
 

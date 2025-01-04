@@ -155,14 +155,14 @@ function Gallery() {
       <section className="relative bg-gray-900/90 md:px-40 w-full h-[100vh] p-4 flex flex-col items-center justify-center">
         <div className="mb-10 flex items-center justify-center flex-col md:my-10">
           <h1 className="text-gray-400 border-l-2 border-gray-400 px-2">
-            Hall of Fame • Knight Preference
+            Hall of Fame • Knights Legacy
           </h1>
           <h1
             className="md:text-6xl text-3xl font-bold  text-center"
             id="galleryTitle"
           >
-            <b className="text-emerald-300">Become</b> the{" "}
-            <b className="text-emerald-300">Knight</b> you always wanted.
+            <b className="text-emerald-300">Become One </b> with your{" "}
+            <b className="text-emerald-300">Dream</b>
           </h1>
         </div>
         <div

@@ -39,7 +39,7 @@ function What() {
   }, []);
 
   return (
-    <section className="h-[auto] w-full relative overflow-hidden md:py-20 " id = "What">
+    <section className="h-[auto] w-full relative overflow-hidden md:py-20 my-10 " id = "What">
       <div className="absolute top-0 left-0 w-full h-[100vh]"></div>
 
       {/* Second div with shadow on top */}

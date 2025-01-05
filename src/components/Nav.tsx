@@ -56,6 +56,8 @@ function Nav() {
 
   const changeActiveMenu = (menu: string): void => {
     setActiveMenu(menu);
+    setIsExpanded(false);
+    document.body.style.overflow = "";
   };
 
   const loadMenus = useCallback(() => {
@@ -68,6 +70,7 @@ function Nav() {
           activeMenu === menu ? "font-bold text-emerald-300 underline " : ""
         }`}
         href={`#${menu}`}
+        
       >
         {menu}
       </a>

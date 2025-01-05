@@ -28,7 +28,7 @@ function Encouragements() {
   };
 
   return (
-    <section className={`md:h-[auto] h-[50vh] w-full relative pt-20`} id="encouragement">
+    <section className={`md:h-[auto] h-[50vh] w-full relative  my-20`} id="encouragement">
       <div
         className={`absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-r `}
       ></div>

@@ -112,7 +112,7 @@ function Explore() {
   useEffect(() => {
     const interval = setInterval(() => {
       moveKnights()
-    },10000)
+    },5000)
 
     return () => {
       clearInterval(interval)
@@ -147,7 +147,7 @@ function Explore() {
   useGSAP(() => {
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: "#exploreContainer",
+        trigger: "#Explore",
         scrub: 1,
         start: "top 50%",
         end: "bottom 150%",
@@ -186,7 +186,7 @@ function Explore() {
   return (
     <section
       className={`md:h-[180vh] w-full relative md:mt-40 mt-20 mb-10 md:block overflow-hidden `}
-      id="exploreContainer"
+      id="Explore"
     >
       <div
         className={`absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-r `}

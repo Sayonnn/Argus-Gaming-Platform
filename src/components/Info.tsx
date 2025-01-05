@@ -10,7 +10,7 @@ function Info() {
   useGSAP(() => {
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: "#info",
+        trigger: "#About",
         start: "top 60%",
         end: "bottom 100%",
         scrub: 1,
@@ -41,7 +41,7 @@ function Info() {
   return (
     <section
       className="h-[auto] w-full relative overflow-hidden md:py-20"
-      id="info"
+      id="About"
     >
       <div className="absolute top-0 left-0 w-full h-[100vh]"></div>
 

@@ -5,6 +5,7 @@
 * {
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
+    transition: .2s linear;
 }
 
 *::-webkit-scrollbar {

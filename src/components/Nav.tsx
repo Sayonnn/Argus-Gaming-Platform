@@ -36,9 +36,7 @@ function Nav() {
       setPosition(window.scrollY > 0);
       if (window.scrollY === 0) {
         setShowing(true);
-      } else {
-        setShowing(false);
-      }
+      } 
     };
     window.addEventListener("scroll", handleScroll);
 
@@ -63,15 +61,16 @@ function Nav() {
   const loadMenus = useCallback(() => {
     const menus: string[] = ["Home", "Explore", "Knights", "About"];
     return menus.map((menu, index) => (
-      <li
+      <a
         key={index}
         onClick={() => changeActiveMenu(menu)}
         className={`transition ease-in duration-200 cursor-pointer  p-2 hover:text-gray-50  rounded-md ${
           activeMenu === menu ? "font-bold text-emerald-300 underline " : ""
         }`}
+        href={`#${menu}`}
       >
         {menu}
-      </li>
+      </a>
     ));
   }, [activeMenu]);
 
@@ -104,9 +103,7 @@ function Nav() {
         }`}
       >
         <ul className="flex gap-4 flex-col text-xl">
-          <li>Explore</li>
-          <li>Knights</li>
-          <li>About</li>
+       { loadMenus()}
         </ul>
       </section>
     </>

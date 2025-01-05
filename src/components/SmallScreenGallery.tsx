@@ -59,7 +59,7 @@ function Gallery() {
 
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: "#galleryContainer",
+        trigger: "#Knights",
         scrub: 1,
         start: "top 50%",
         end: "bottom 50%",
@@ -122,7 +122,7 @@ function Gallery() {
   return (
     <section
       className={`${s.galleryWrapper} h-auto w-full  overflow-hidden block md:hidden`}
-      id="galleryContainer"
+      id="Knights"
     >
       <div className="absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-r"></div>
       <section className="relative bg-gray-900/90 md:px-40 w-full h-[100vh] p-4 flex flex-col items-center justify-center">
@@ -138,7 +138,7 @@ function Gallery() {
              <b className="text-emerald-300">Dream</b>
           </h1>
         </div>
-        <div className={`md:space-x-4 space-x-2 py-20 ${s.galleryContainer}`} id="imagesContainer">
+        <div className={`md:space-x-4 space-x-2 py-20 ${s.Knights}`} id="imagesContainer">
           {imagesInView.map((img: Image) => (
             <div
               className={` h-[400px] w-[300px] p-2 ${s.cardWrapper} `}

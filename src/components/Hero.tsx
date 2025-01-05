@@ -5,7 +5,7 @@ function Hero() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
 
   return (
-    <section className={`relative`}>
+    <section className={`relative`} id='Home'>
       <video
         src={bg3}
         className={`object-cover w-full h-[100vh] absolute left-0 top-0 transition-opacity duration-500 ${

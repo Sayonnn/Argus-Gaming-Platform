@@ -58,7 +58,7 @@ function Gallery() {
 
     const timeline = gsap.timeline({
       scrollTrigger: {
-        trigger: "#largeGalleryContainer",
+        trigger: "#Knights",
         scrub: 1,
         start: "top 50%",
         end: "bottom 150%",
@@ -149,7 +149,7 @@ function Gallery() {
   return (
     <section
       className={`${s.galleryWrapper} h-[auto] w-full  md:py-40 overflow-hidden hidden md:block `}
-      id="largeGalleryContainer"
+      id="Knights"
     >
       <div className="absolute top-0 left-0 w-full h-[100vh] bg-gradient-to-r"></div>
       <section className="relative bg-gray-900/90 md:px-40 w-full h-[100vh] p-4 flex flex-col items-center justify-center">
